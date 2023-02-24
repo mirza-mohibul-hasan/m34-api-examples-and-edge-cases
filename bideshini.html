@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O go bideshini</title>
+    <style>
+        #user-container {
+            background-color: rgb(252, 206, 5);
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        #image {
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        #refreshBtn {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-size: 14px;
+            background-color: rgb(255, 106, 7);
+            color: rgb(2, 2, 2);
+        }
+
+        #refreshBtn:hover {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="user-container">
+        <h1>Bideshini Marriage Service</h1>
+        <img id="image" src="" alt="">
+        <h4>Name: <span id="name"></span></h4>
+        <p>Location: <span id="location"></span></p>
+        <p>Number: <span id="number"></span></p>
+        <p>Email: <span id="email"></span></p>
+        <button onclick="loadUser()" id="refreshBtn">Refresh</button>
+    </section>
+
+    <script src="js/bideshini.js"></script>
+</body>
+
+</html>
