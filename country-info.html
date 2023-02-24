@@ -7,17 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>country Info</title>
     <style>
+        #country-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
         .country {
-            border: 5px solid yellow;
+            border: 5px solid tomato;
             background-color: salmon;
             padding: 10px;
             margin: 5px;
             border-radius: 10px;
         }
+
+        @media only screen and (max-width: 576px) {
+            #country-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media only screen and (min-width: 577px) and (max-width: 992px) {
+            #country-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
     </style>
 </head>
 
 <body>
+    <h2>Country details</h2>
+    <section id="country-detail">
+
+    </section>
     <h1>Country info</h1>
     <section id="country-container">
 
